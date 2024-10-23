@@ -31,9 +31,21 @@
         {% endblock %}
 
         <!-- Footer-->
-        <footer class="py-5 bg-dark">
-            <div class="container"><p class="m-0 text-center text-white">Copyright &copy; Ecommerce 2023</p></div>
-        </footer>
+        <!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container">
+        <p class="m-0 text-center text-white">
+            &copy; 2023 Django Ecommerce. All rights reserved.
+        </p>
+        <div class="text-center">
+            <a href="{% url 'about' %}" class="text-white">About Us</a> | 
+            <a href="{% url 'contact' %}" class="text-white">Contact</a> | 
+            {% comment %} <a href="{% url 'privacy' %}" class="text-white">Privacy Policy</a> | 
+            <a href="{% url 'terms' %}" class="text-white">Terms of Service</a>
+        </div> {% endcomment %}
+    </div>
+</footer>
+
         <!-- Bootstrap core JS-->
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
